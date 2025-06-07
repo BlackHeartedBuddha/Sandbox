@@ -197,7 +197,7 @@ int main() {
         delete[] rgb;
 
         // Optional: small sleep or frame rate limit
-        usleep(33000);  // ~30fps
+        usleep(13000);  // ~30fps
     }
 
     // Cleanup
