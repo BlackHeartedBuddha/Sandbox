@@ -17,5 +17,10 @@ make
 # In the browser in the public folder
 python3 -m http.server 8000
 
+# Mac
+g++ subscriber.cpp -std=c++17 -lzmq -I/opt/homebrew/include
+
+
+
 
 ```
