@@ -13,7 +13,7 @@
 #include <jpeglib.h>
 
 #define PORT 8080
-#define DEST_IP "127.0.0.1"
+#define DEST_IP "127.0.0.1" // destination ip to send to
 #define PACKET_SIZE 1400  // max UDP payload is ~1500 - IP/UDP headers
 
 struct buffer {
@@ -147,7 +147,7 @@ int main() {
         jpeg_buf = nullptr;
         jpeg_size = 0;
         delete[] rgb;
-        usleep(30000); // ~30fps
+        usleep(10000); // ~30fps
     }
 
     // Cleanup
