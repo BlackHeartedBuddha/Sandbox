@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>ZMQ Live Feed</title></head>
+<body>
+  <h1>Live Feed</h1>
+  <pre id="output"></pre>
+  <script>
+    async function fetchData() {
+      const res = await fetch("/data.txt");
+      const text = await res.text();
+      document.getElementById("output").textContent = text;
+    }
+    setInterval(fetchData, 2000); // fetch every 2 seconds
+    fetchData(); // initial call
+  </script>
+</body>
+</html>
+
