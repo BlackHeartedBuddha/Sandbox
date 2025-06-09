@@ -5,13 +5,17 @@ package com.mycompany.app;
  */
 public class App {
    public static void main(String[] args) {
-        ZKClient client = new ZKClient();
-        try {
-            client.connect();
-            client.runExample();
-            client.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // Zookeeper
+        // ZKClient client = new ZKClient();
+        // try {
+        //     client.connect();
+        //     client.runExample();
+        //     client.close();
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        // }
+        KafkaClient client = new KafkaClient("localhost:9092", "demo-topic");
+        client.produceMessage("Hello from refactored KafkaClient!");
+        client.consumeMessages();
     }
 }
