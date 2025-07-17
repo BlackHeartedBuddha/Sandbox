@@ -4,12 +4,12 @@
 - [ ] Rust
 - [ ] Golang
 - [ ] C 
-- [ ] C++
+- [x] C++
 - [ ] Zig
 - [ ] Erlang
 - [ ] Elixir
 - [ ] Ruby
-- [ ] Java
+- [x] Java
 - [ ] Cobol
 - [ ] Fortran
 - [ ] VHDL
@@ -17,5 +17,5 @@
 - [ ] Lua
 - [ ] Visual Basic
 - [ ] C#
-- [ ] Python
+- [x] Python
 - [ ] JS/TS
